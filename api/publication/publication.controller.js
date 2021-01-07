@@ -2,15 +2,6 @@ import { readFile } from 'fs/promises';
 import publicationModel from './publication.model.js';
 
 class PublicationController {
-  listPublications = async res => {
-    try {
-      const data = await readFile(new URL('../../db/test_data.json', import.meta.url));
-      return JSON.parse(data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
   // GET
   getPublications = async (req, res) => {
     try {
