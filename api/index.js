@@ -60,7 +60,7 @@ class PublicationServer {
     this.initServer();
     this.initMiddlewares();
     this.initRoutes();
-    // await this.initDatabase();
+    await this.initDatabase();
     this.startListening();
   }
 }
