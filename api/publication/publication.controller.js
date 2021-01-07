@@ -6,7 +6,7 @@ class PublicationController {
     try {
       const contacts = await publicationModel.find();
 
-      res.status(200).send('contacts');
+      res.status(200).send(contacts);
     } catch (err) {
       res.status(err.status).send(err.message);
     }
