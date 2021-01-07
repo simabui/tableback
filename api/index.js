@@ -41,6 +41,7 @@ class PublicationServer {
             console.log(err);
             return process.exit(1);
           }
+
           console.log('Database connection successful');
         },
       );
