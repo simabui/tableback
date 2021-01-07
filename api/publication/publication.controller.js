@@ -1,4 +1,3 @@
-import { readFile } from 'fs/promises';
 import publicationModel from './publication.model.js';
 
 class PublicationController {
